@@ -4,9 +4,8 @@ import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
 import PropertyListPage from './pages/PropertyListPage.jsx';
 import PropertyDetailPage from './pages/PropertyDetailPage.jsx';
-import ChatPage from './pages/ChatPage.jsx';
-import AgentMainPage from './pages/agentMainPage.jsx';
-import SellsPage from './pages/SellsPage.jsx';
+//import AgentMainPage from './pages/agentMainPage.jsx';
+//import SellsPage from './pages/SellsPage.jsx';
 
 function App() {
   return (
@@ -17,9 +16,8 @@ function App() {
         <Route path="/registro" element={<RegisterPage />} />
         <Route path="/buscar" element={<PropertyListPage />} />
         <Route path="/inmueble" element={<PropertyDetailPage />} />
-        <Route path="/chat" element={<ChatPage />} />
-        <Route path="/agente" element={<AgentMainPage />} />
-        <Route path="/ventas" element={<SellsPage />} />
+        {/*<Route path="/agente" element={<AgentMainPage />} />
+        <Route path="/ventas" element={<SellsPage />} />*/}
       </Routes>
     </BrowserRouter>
   );

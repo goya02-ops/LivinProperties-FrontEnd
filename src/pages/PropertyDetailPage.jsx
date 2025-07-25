@@ -2,6 +2,8 @@
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import ChatWidget from "../components/ChatWidget.jsx";
+
 
 const inmueble = {
   imagen: 'https://via.placeholder.com/800x500',
@@ -36,17 +38,7 @@ export default function PropertyDetailPage() {
           <p><strong>Baños:</strong> {inmueble.baños}</p>
           <p><strong>Superficie:</strong> {inmueble.superficie} m²</p>
         </div>
-
-        <div class="mt-8 bg-gray-50 p-4 rounded-md">
-          <h2 class="text-lg font-semibold text-indigo-600">Contacto con el agente</h2>
-          <p class="text-sm mt-1">Agente: {inmueble.agente.nombre}</p>
-          <a
-            href={`/chat`}
-            class="inline-block mt-3 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition"
-          >
-            Iniciar Chat
-          </a>
-        </div>
+      <ChatWidget/>
       </div>
       <Footer/>
     </div>
