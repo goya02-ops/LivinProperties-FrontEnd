@@ -41,7 +41,7 @@ export default function PropertyDetailPage() {
           <h2 class="text-lg font-semibold text-indigo-600">Contacto con el agente</h2>
           <p class="text-sm mt-1">Agente: {inmueble.agente.nombre}</p>
           <a
-            href={`mailto:${inmueble.agente.contacto}`}
+            href={`/chat`}
             class="inline-block mt-3 bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition"
           >
             Iniciar Chat

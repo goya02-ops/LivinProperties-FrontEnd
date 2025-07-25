@@ -11,12 +11,14 @@ export default function LandingPage() {
         <p class="text-lg text-center max-w-xl mb-10">
           Encontrá el inmueble ideal para tu próximo paso. Navegá por propiedades, contactá agentes y descubrí opciones en tu ciudad.
         </p>
-        <a
-          href="/buscar"
-          class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition"
-        >
-          Comenzar búsqueda
-        </a>
+       <div className="flex flex-col space-y-4"> 
+          <a href="/buscar" className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition min-w-[200px] text-center" >
+            Buscar
+          </a>
+          <a href="/agente" className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition min-w-[200px] text-center">
+            Soy agente
+          </a>
+        </div>
       </main>
 
       <Footer />
