@@ -10,22 +10,22 @@ export default function AgentDashboardPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         <OptionCard
-          to="/agent/visitas/nueva"
+          to="/agent/RegisterVisitPage"
           icon={FiCalendar}
           title="Agendar Visita"
         />
         <OptionCard
-          to="/agent/visitas"
+          to="/agent/RegisteredVisitsPage"
           icon={FiClock}
           title="Visitas Registradas"
         />
         <OptionCard
-          to="/agent/ventas/nueva"
+          to="/agent/NewSalePage"
           icon={FiTag}
           title="Registrar Venta"
         />
         <OptionCard
-          to="/agent/ventas"
+          to="/agent/RegSalesPage"
           icon={FiFileText}
           title="Ventas Registradas"
         />
