@@ -5,7 +5,6 @@ import RegisterPage from './pages/RegisterPage.jsx';
 import PropertyListPage from './pages/PropertyListPage.jsx';
 import PropertyDetailPage from './pages/PropertyDetailPage.jsx';
 import SellsPage from './pages/Agent/SellsPage.jsx';
-import VisitsPage from './pages/VisitsPage.jsx';
 import AgentDashboardPage from './pages/Agent/DashboardPage.jsx';
 import PropertyDocumentsPage from './pages/PropertyDocumentsPage.jsx';
 
@@ -21,7 +20,7 @@ function App() {
         <Route path="/agente" element={<AgentDashboardPage />} />
         <Route path="/documentos" element={<PropertyDocumentsPage />} />
         <Route path="/ventas" element={<SellsPage />} />
-        <Route path="/visitas" element={<VisitsPage />} />
+        
       </Routes>
     </BrowserRouter>
   );
