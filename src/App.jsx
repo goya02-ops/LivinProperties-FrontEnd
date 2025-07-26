@@ -4,8 +4,8 @@ import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
 import PropertyListPage from './pages/PropertyListPage.jsx';
 import PropertyDetailPage from './pages/PropertyDetailPage.jsx';
-//import AgentMainPage from './pages/agentMainPage.jsx';
-//import SellsPage from './pages/SellsPage.jsx';
+import MainPage from './pages/Agent/MainPage.jsx';
+import SellsPage from './pages/Agent/SellsPage.jsx';
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         <Route path="/registro" element={<RegisterPage />} />
         <Route path="/buscar" element={<PropertyListPage />} />
         <Route path="/inmueble" element={<PropertyDetailPage />} />
-        {/*<Route path="/agente" element={<AgentMainPage />} />
-        <Route path="/ventas" element={<SellsPage />} />*/}
+        <Route path="/agente" element={<MainPage />} />
+        <Route path="/ventas" element={<SellsPage />} />
       </Routes>
     </BrowserRouter>
   );
