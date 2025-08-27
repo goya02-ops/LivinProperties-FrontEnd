@@ -1,9 +1,12 @@
 import { FiCalendar, FiClock, FiTag, FiFileText, FiHome } from 'react-icons/fi'
 import OptionCard from '../../components/OptionCard.jsx'
+import Header from '../../components/Header.jsx'
+import Footer from '../../components/Footer.jsx'
 
 export default function AgentDashboardPage() {
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-8">
+    <Header />  
       <h1 className="text-3xl font-bold text-indigo-600 mb-8 text-center">
         Panel de Agente Inmobiliario
       </h1>
@@ -35,6 +38,7 @@ export default function AgentDashboardPage() {
           title="Propiedades"
         />
       </div>
+    <Footer />  
     </div>
   )
 }

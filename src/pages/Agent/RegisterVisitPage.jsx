@@ -1,30 +1,15 @@
 // src/pages/AgendarVisitaForm.jsx
 import React from 'react';
+import Header from '../../components/Header.jsx'
+import Footer from '../../components/Footer.jsx'
+
 
 const AgendarVisitaForm = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4 sm:p-6 lg:p-8">
-
-      {/* Header */}
-      <header className="w-full max-w-4xl bg-white shadow-md rounded-lg p-4 flex items-center justify-between mb-6">
-        <div className="flex items-center space-x-2">
-          {/* Icono de Casa con Flechas (placeholder) */}
-          <span className="text-blue-600 text-2xl font-bold">🏠↑</span>
-          <h1 className="text-2xl font-semibold text-gray-800">Livin' Properties</h1>
-        </div>
-      </header>
-
-      {/* Breadcrumbs */}
-      <nav className="w-full max-w-4xl text-sm text-gray-600 mb-6">
-        <span>Home</span>
-        <span className="mx-1">//</span>
-        <span>Visitas</span>
-        <span className="mx-1">//</span>
-        <span className="font-semibold text-blue-600">Agendar una visita</span>
-      </nav>
-
+    <div className="min-h-screen bg-gray-50 px-4 py-8">
+    <Header/>  
       {/* Formulario Principal */}
-      <main className="w-full max-w-xl bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+      <main className="w-full max-w-xl bg-white p-6 sm:p-8 rounded-lg shadow-xl max-w-5xl mx-auto">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-6 text-center">Agendar una Visita</h2>
 
         <form className="space-y-6">
@@ -104,6 +89,7 @@ const AgendarVisitaForm = () => {
           </div>
         </form>
       </main>
+    <Footer/>
     </div>
   );
 };
