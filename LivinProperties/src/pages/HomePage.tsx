@@ -1,4 +1,4 @@
-import { Header } from "../components"
+import { Footer, Header } from "../components"
 
 export default function HomePage () {
     return (
@@ -6,6 +6,7 @@ export default function HomePage () {
             <Header />
             <h1>Welcome to LivinProperties</h1>
             <p>Your trusted platform for property listings and management.</p>
+            <Footer />
         </div>
     );
 };
